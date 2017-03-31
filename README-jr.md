@@ -55,3 +55,38 @@ CONTRIBUTING.md, LICENSE.md, README.md
 
   - INSTALANDO o livereload
   - npm i --save-dev gulp-connect
+
+
+
+- Open Graph
+
+- react-pomodoro
+- open graph = protocolo que o facebook criou. Tipo de especificação
+que te dá algumas metatags que colocando no seu site consegue
+controlar a forma que ela é exibida no facebook, linkedin.
+- Exemplo:
+https://github.com/afonsopacifer/react-pomodoro/blob/master/app/index.html
+
+
+    <!-- Open graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Pomodoro timer">
+        <meta property="og:description" content="Pomodoro timer for developers.">
+        <meta property="og:url" content="http://afonsopacifer.github.io/react-pomodoro/">
+        <meta property="og:image" content="http://afonsopacifer.github.io/react-pomodoro/img/share.png">
+
+        <!-- Twitter cards -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Pomodoro timer">
+        <meta name="twitter:description" content="Pomodoro timer for developers.">
+        <meta name="twitter:url" content="http://afonsopacifer.github.io/react-pomodoro/">
+        <meta name="twitter:image" content="http://afonsopacifer.github.io/react-pomodoro/img/share.png">        
+
+
+- App react exemplo: afonsopacifer.github.io/react-pomodoro/
+
+
+- IMPORTANTE
+- O javascript é bloqueante, por esse motivo jogamos ele no fim do html, pois se houver um erro ele todo o conteúdo do body será mostrado.
+
+- async no carregar do script ajuda a ser carregado paralelamente.
