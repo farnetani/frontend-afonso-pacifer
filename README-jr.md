@@ -53,4 +53,5 @@ CONTRIBUTING.md, LICENSE.md, README.md
 
   gulp.task('build', ['pug', 'stylus'])
 
-  
+  - INSTALANDO o livereload
+  - npm i --save-dev gulp-connect
