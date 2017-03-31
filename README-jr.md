@@ -90,3 +90,15 @@ https://github.com/afonsopacifer/react-pomodoro/blob/master/app/index.html
 - O javascript é bloqueante, por esse motivo jogamos ele no fim do html, pois se houver um erro ele todo o conteúdo do body será mostrado.
 
 - async no carregar do script ajuda a ser carregado paralelamente.
+
+
+# Normalize.css
+
+- O normalize padroniza as tags dos elementos do html5 para evitar
+que cada browser faça a sua própria estilização.
+
+- Basta acrescentar:
+link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+
+
+- fonts.google.com
