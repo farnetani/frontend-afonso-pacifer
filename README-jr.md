@@ -26,3 +26,31 @@ CONTRIBUTING.md, LICENSE.md, README.md
       - default.pug
 
   - out
+
+
+- Instalar e configurar o gulp (processo de build)
+- npm install --save-dev gulp
+- npm install --save-dev gulp-stylus
+- npm install --save-dev gulp-pug
+- Criar e montar o arquivo gulpfile.js
+
+  - importar os plugins
+  var gulp = require('gulp')
+  var pug = require('gulp-pug')
+  var stylus = require('gulp-stylus')
+
+  gulp.task('pug', function() {
+    gulp.src('./src/*.pug')
+    .pipe(pug())
+    .pipe(gulp.dest('./out'))
+  })
+
+  gulp.task('stylus', function() {
+    gulp.src('./src/assets/styles/*.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('./out/assets/styles/'))
+  })
+
+  gulp.task('build', ['pug', 'stylus'])
+
+  
